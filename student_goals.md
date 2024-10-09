@@ -30,10 +30,9 @@ _Week 4:_ Develop and test the CNN model to identify segmented viral genomes fro
 
 
   - One hot encoding 
-
   - Chaos game representation encoding (ask Susie) 
-
   - Main question: can you learn segmented vs. Non segmented virus. Secondary question is can you learn which segments belong together (less likely)? 
+  - Write a CNN or transformer using pytorch and load it into a [docker container](docker_container_intro.md) for running on the GPU cluster at Pawsey.
 
 _Week 5:_ Develop and test the CNN model to identify segmented viral genomes from environmental sequencing data. The students will continue to fine-tune and test the model. 
 
