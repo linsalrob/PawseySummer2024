@@ -15,7 +15,7 @@ This project will mainly make use of deep learning techniques and graph algorith
 
 # The milestones
 
-_Milestone 1:_ Create a database of sequences from known segmented viral genomes for model training.
+_Milestone 1:_ Create a database of sequences from known segmented viral genomes for model training
 _Milestone 2:_ Develop a deep-learning model that can identify segmented viral genomes from environmental sequencing data
 _Milestone 3:_ Determine corresponding segments of viral genomes using their abundance and graph algorithms
 _Milestone 4:_ Publish the developed bioinformatics tool as an end-to-end pipeline
