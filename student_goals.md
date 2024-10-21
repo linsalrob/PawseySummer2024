@@ -45,7 +45,7 @@ _Week 7:_ End of year break - NO WORK
 
 _Week 8:_ Identify the corresponding segments of viral genomes. The students will learn about different graph algorithms and graph-related computational problems. The students will be exposed to various graph libraries and explore available implementations. 
 
-For each contig that looks like a segmented virus we want to get a coverage graph based on the Poisson(cov1, cov2) [which should approach 1] .Use some random (~1) threshold to create a graph based on  [normalised] coverage counts, and use [clique detection](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.clique.find_cliques.html) to find which cliques are from segmented viruses. 
+For each contig that looks like a segmented virus we want to get a coverage graph based on the Poisson(cov1, cov2) [which should approach 1] .Use some random (~1) threshold to create a graph based on  [normalised] coverage counts, and use [clique detection](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.clique.find_cliques.html) to find which cliques are from segmented viruses. [Read more on the methods](more_on_methods.md)
 
 _Week 9:_ Identify the corresponding segments of viral genomes. The students will fine-tune the developed methods and test them on different datasets. 
 
