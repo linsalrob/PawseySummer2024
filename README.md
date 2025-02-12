@@ -3,6 +3,8 @@ Code and ideas for the Pawsey summer internship 2024, designing CNNs for segment
 
 
 ![alt text](https://github.com/linsalrob/PawseySummer2024/blob/main/poster/Sam_Klauer-Poster.png)
+References for information and images at bottom
+
 # The overview
 
 Segmented viruses are a type of virus that contain multiple separate DNA pieces, or segments, rather than in a single continuous strand. Each segment typically encodes one or more proteins necessary for the virus's replication and infection processes. Influenza and rotavirus are well-known examples of segmented viruses. Understanding segmented viruses helps scientists develop better vaccines and treatments. For example, influenza vaccines are updated annually based on predictions about which viral strains are likely to circulate. Research on segmented viruses also aids in preparing for and mitigating the impacts of potential pandemics, as these viruses can rapidly evolve and spread.
@@ -56,3 +58,18 @@ The project’s success will be determined by the following criteria.
 # Weekly student goals
 
 [Weekly goals to work towards](student_goals.md)
+
+# Poster References
+
+# References:
+
+Chatterjee P, Nair P, Chersich M, Terefe Y, Chauhan AS, Quesada F, Simpson G. One Health, "Disease X" & the challenge of "Unknown" Unknowns. Indian J Med Res. 2021 Mar;153(3):264-271. doi: 10.4103/ijmr.IJMR_601_21. PMID: 33906988; PMCID: PMC8204831.
+
+McDonald SM, Nelson MI, Turner PE, Patton JT. Reassortment in segmented RNA viruses: mechanisms and outcomes. Nat Rev Microbiol. 2016 Jul;14(7):448-60. doi: 10.1038/nrmicro.2016.46. Epub 2016 May 23. PMID: 27211789; PMCID: PMC5119462.
+
+
+# Images in Poster:
+
+https://maelfabien.github.io/machinelearning/GridRand/#grid-search
+
+da Cruz, M.H.P., Saito, P.T.M., Paschoal, A.R., Bugatti, P.H. (2019). Classification of Transposable Elements by Convolutional Neural Networks. In: Rutkowski, L., Scherer, R., Korytkowski, M., Pedrycz, W., Tadeusiewicz, R., Zurada, J. (eds) Artificial Intelligence and Soft Computing. ICAISC 2019. Lecture Notes in Computer Science(), vol 11509. Springer, Cham. https://doi.org/10.1007/978-3-030-20915-5_15
