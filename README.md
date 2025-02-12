@@ -1,6 +1,8 @@
 # PawseySummer2024
 Code and ideas for the Pawsey summer internship 2024, designing CNNs for segmented viruses
 
+
+![alt text](https://github.com/linsalrob/PawseySummer2024/blob/main/poster/Sam_Klauer-Poster.png)
 # The overview
 
 Segmented viruses are a type of virus that contain multiple separate DNA pieces, or segments, rather than in a single continuous strand. Each segment typically encodes one or more proteins necessary for the virus's replication and infection processes. Influenza and rotavirus are well-known examples of segmented viruses. Understanding segmented viruses helps scientists develop better vaccines and treatments. For example, influenza vaccines are updated annually based on predictions about which viral strains are likely to circulate. Research on segmented viruses also aids in preparing for and mitigating the impacts of potential pandemics, as these viruses can rapidly evolve and spread.
