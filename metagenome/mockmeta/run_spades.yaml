@@ -1,0 +1,162 @@
+- STAGE: Before start
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: before_start
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: ec_start
+- STAGE: Read error correction
+  args:
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/corrected/configs/config.info
+  config_dir: corrected
+  del_after:
+  - tmp/hammer_19_kgee9
+  output_files:
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/corrected/corrected.yaml
+  path: /Users/samklauer/Downloads/SPAdes-4.0.0-Darwin/bin/spades-hammer
+  short_name: ec_runtool
+- STAGE: corrected reads compression
+  args:
+  - /Users/samklauer/Downloads/SPAdes-4.0.0-Darwin/share/spades/spades_pipeline/scripts/compress_all.py
+  - --input_file
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/corrected/corrected.yaml
+  - --ext_python_modules_home
+  - /Users/samklauer/Downloads/SPAdes-4.0.0-Darwin/share/spades
+  - --max_threads
+  - '16'
+  - --output_dir
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/corrected
+  - --gzip_output
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: /opt/anaconda3/bin/python3
+  short_name: ec_compress
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: ec_finish
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: as_start
+- STAGE: K21
+  args:
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/K21/configs/config.info
+  config_dir: K21
+  del_after: []
+  output_files: []
+  path: /Users/samklauer/Downloads/SPAdes-4.0.0-Darwin/bin/spades-core
+  short_name: k21
+- STAGE: K33
+  args:
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/K33/configs/config.info
+  config_dir: K33
+  del_after: []
+  output_files: []
+  path: /Users/samklauer/Downloads/SPAdes-4.0.0-Darwin/bin/spades-core
+  short_name: k33
+- STAGE: K55
+  args:
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/K55/configs/config.info
+  config_dir: K55
+  del_after: []
+  output_files: []
+  path: /Users/samklauer/Downloads/SPAdes-4.0.0-Darwin/bin/spades-core
+  short_name: k55
+- STAGE: K77
+  args:
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/K77/configs/config.info
+  config_dir: K77
+  del_after: []
+  output_files: []
+  path: /Users/samklauer/Downloads/SPAdes-4.0.0-Darwin/bin/spades-core
+  short_name: k77
+- STAGE: K99
+  args:
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/K99/configs/config.info
+  config_dir: K99
+  del_after: []
+  output_files: []
+  path: /Users/samklauer/Downloads/SPAdes-4.0.0-Darwin/bin/spades-core
+  short_name: k99
+- STAGE: K127
+  args:
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/K127/configs/config.info
+  config_dir: K127
+  del_after: []
+  output_files: []
+  path: /Users/samklauer/Downloads/SPAdes-4.0.0-Darwin/bin/spades-core
+  short_name: k127
+- STAGE: Copy files
+  args:
+  - /Users/samklauer/Downloads/SPAdes-4.0.0-Darwin/share/spades/spades_pipeline/scripts/copy_files.py
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/K127/before_rr.fasta
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/before_rr.fasta
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/K127/assembly_graph_after_simplification.gfa
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/assembly_graph_after_simplification.gfa
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/K127/final_contigs.fasta
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/contigs.fasta
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/K127/first_pe_contigs.fasta
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/first_pe_contigs.fasta
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/K127/strain_graph.gfa
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/strain_graph.gfa
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/K127/scaffolds.fasta
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/scaffolds.fasta
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/K127/scaffolds.paths
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/scaffolds.paths
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/K127/assembly_graph_with_scaffolds.gfa
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/assembly_graph_with_scaffolds.gfa
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/K127/assembly_graph.fastg
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/assembly_graph.fastg
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/K127/final_contigs.paths
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/contigs.paths
+  config_dir: ''
+  del_after:
+  - .bin_reads
+  - tmp/spades_rewto86g
+  output_files: []
+  path: /opt/anaconda3/bin/python3
+  short_name: copy_files
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: as_finish
+- STAGE: Breaking scaffolds
+  args:
+  - /Users/samklauer/Downloads/SPAdes-4.0.0-Darwin/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py
+  - --result_scaffolds_filename
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/scaffolds.fasta
+  - --misc_dir
+  - /Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/misc
+  - --threshold_for_breaking_scaffolds
+  - '3'
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: /opt/anaconda3/bin/python3
+  short_name: bs
+- STAGE: Terminate
+  args: []
+  config_dir: ''
+  del_after:
+  - configs
+  output_files: []
+  path: 'true'
+  short_name: terminate

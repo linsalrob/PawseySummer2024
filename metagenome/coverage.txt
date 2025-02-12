@@ -1,0 +1,12 @@
+GordoniaEmperor    100
+GordoniaM          150
+Microbacterium     200
+Anhembi1           250
+Anhembi2           250
+Anhembi3           250
+Boraceia1          300
+Boraceia2          300
+Boraceia3          300
+Macaua1            350
+Macaua2            350
+Macaua3            350

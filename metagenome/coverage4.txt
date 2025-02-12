@@ -1,0 +1,12 @@
+Genome_A    300
+Genome_B    350
+Genome_C    400
+Genome_D    50
+Genome_E    50
+Genome_F    50
+Genome_G    100
+Genome_H    100
+Genome_I    100
+Genome_J    250
+Genome_K    250
+Genome_L    250

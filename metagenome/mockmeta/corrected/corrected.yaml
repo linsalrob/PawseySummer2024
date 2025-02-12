@@ -1,0 +1,9 @@
+- "left reads":
+  - "/Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/corrected/miseq_reads_R1.fastq00.0_0.cor.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/corrected/miseq_reads_R2.fastq00.0_0.cor.fastq.gz"
+  "single reads":
+  - "/Users/samklauer/GitHub/PawseySummer2024/metagenome/mockmeta/corrected/miseq_reads_R_unpaired00.0_0.cor.fastq.gz"
+  "type": "paired-end"
