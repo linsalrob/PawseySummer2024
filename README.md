@@ -1,9 +1,24 @@
 # PawseySummer2024
 Code and ideas for the Pawsey summer internship 2024, designing CNNs for segmented viruses
 
+# Poster
 
 ![alt text](https://github.com/linsalrob/PawseySummer2024/blob/main/poster/Sam_Klauer-Poster.png)
 References for information and images at bottom
+
+# Brief Summary of Processes
+
+ - Use of refseq data for both segments and nonsegmented viruses to create a dataset
+ - grid search using keras and tensorflow to determine greatest accuracy and minimal overfitting using a combination of different layers (number and type), number and size of filters, addition and values for regularizers and dropout, and final hyperparameter search of learning rate, batch size, and epochs
+ - Production of a final trained keras model that has 84% accuracy in both the training set and test set
+ - Extraction of a set of three segmented viruses and nonsegmented viruses that scores with high confidence in their respective categories
+ - Creation of three coverage value sets to produce reads using InSilicoSeq
+ - Combination of the reads in to a final full set of reads to then be assembled using metaSPAdes to obtain contigs
+ - Use of coverm to map these contigs back to each of the three sets of reads making up the mock metagenome to determine the coverage values in each 
+ - Taking the set of three coverage values for each contig and comparing all 12 to each other using a Poisson distribution
+ - Extracting these values for comparison and setting a cutoff of similarity for clique detection
+ - Production of a graph that shows correctly grouped segments and solo nonsegmented viruses
+
 
 # The overview
 
